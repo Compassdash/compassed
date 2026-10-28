@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self' https://eqaxgofniwyhvwmdzwsm.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'">
+<title>About · CompassED</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Compass<b>ED</b></a>
+    <button class="ib burger" data-burger aria-label="Menu"><span data-icon="menu"></span></button>
+    <nav id="pubnav">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#teachers">For teachers</a>
+      <a href="about.html" class="on">About</a>
+      <a href="https://compassdash.github.io/Compassdash/" target="_blank" rel="noopener">Compass Dash ↗</a>
+    </nav>
+    <div class="cta">
+      <a class="btn ghost" href="signin.html?role=teacher">Teacher sign in</a>
+      <a class="btn cyan" href="signin.html">Student sign in</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:24px">
+    <div class="wrap">
+      <span class="eyebrow">About</span>
+      <h1>Why CompassED exists</h1>
+      <p class="lead">Compass Dash made revision fun: short lessons, games and XP for Years 7 to 9. CompassED is its serious sibling. It is where the actual schoolwork lives, built by the same team and sharing the same accounts.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap grid g2">
+      <div class="card">
+        <h3>What it is</h3>
+        <p class="mut">A schoolwork platform for KS3: a student portal for lessons, homework, assignments, quizzes, progress and revision, and a separate teacher portal for setting work, marking and watching how a class is doing. It also carries the school-wide bits: announcements, a calendar and notifications.</p>
+      </div>
+      <div class="card">
+        <h3>What it is not</h3>
+        <p class="mut">It is not a replacement for Compass Dash. The games, shop, houses and leaderboards stay on Compass Dash. CompassED only reads progress from it, so nothing there changes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt">
+    <div class="wrap">
+      <div class="kicker">Inspiration</div>
+      <h2>Borrowed from the best, with our own look</h2>
+      <p class="mut" style="max-width:660px">We studied the school platforms teachers already know and took the ideas that genuinely help, without copying anyone's branding.</p>
+      <div class="grid g3" style="margin-top:24px">
+        <div class="card flat"><h4>Courses &amp; assignments</h4><p class="sm mut">Clear modules, due dates and a submissions view, in the spirit of Canvas.</p></div>
+        <div class="card flat"><h4>Simplicity</h4><p class="sm mut">A stream of what matters today and a few taps to hand in work, like Google Classroom.</p></div>
+        <div class="card flat"><h4>Lessons &amp; quizzes</h4><p class="sm mut">Block-based lessons and auto-marked quizzes with explanations, as Moodle does well.</p></div>
+        <div class="card flat"><h4>Personalised learning</h4><p class="sm mut">Mastery checkpoints and a "what next" suggestion, in the spirit of Brightspace.</p></div>
+        <div class="card flat"><h4>School communication</h4><p class="sm mut">Targeted announcements with read receipts, a calendar and notifications, like itslearning.</p></div>
+        <div class="card flat"><h4>School integration</h4><p class="sm mut">Microsoft sign-in, class rosters, reminders and grade sync with Teams for Education.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="privacy">
+    <div class="wrap">
+      <div class="kicker">Privacy &amp; safety</div>
+      <h2>Built for a school</h2>
+      <div class="grid g2" style="margin-top:20px">
+        <div class="card"><h4>Minimal data</h4><p class="sm mut">Students are known by a 4-digit code and a username, just like Compass Dash. No email address or real name is needed unless a school links Microsoft accounts.</p></div>
+        <div class="card"><h4>Separate permissions</h4><p class="sm mut">Students can only see their own class's work and their own progress. Teachers see only their subject's classes. The database checks this on every request, not just the page.</p></div>
+        <div class="card"><h4>Nothing public</h4><p class="sm mut">Submissions, grades, feedback and announcements are only visible to the student concerned and their teachers.</p></div>
+        <div class="card"><h4>Secure by default</h4><p class="sm mut">Every page sets a strict content security policy, teacher sessions lock after 20 minutes without use, and sign-in attempts are rate-limited by the same guard Compass Dash uses.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt">
+    <div class="wrap">
+      <h2>Credits</h2>
+      <p class="mut">Made by <b>Rondellgames inc.</b>: Jayque, Nick, Cade and Abdul. Questions or problems? Tell your teacher, or use the feedback link inside Compass Dash.</p>
+      <div class="row" style="margin-top:12px"><a class="btn cyan" href="signin.html">Sign in</a><a class="btn ghost" href="index.html">Back to home</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© <span id="yr"></span> CompassED · Made by Rondellgames inc.</span>
+    <a href="about.html">About</a>
+    <a href="https://compassdash.github.io/Compassdash/" target="_blank" rel="noopener">Compass Dash</a>
+  </div>
+</footer>
+<script src="assets/icons.js"></script>
+<script src="assets/public.js"></script>
+</body>
+</html>
